@@ -55,7 +55,8 @@ For example, if you enter ```porch/esps``` as the topic, the state can be querie
 And here's a corresponding configuration for [Home Assistant](https://home-assistant.io/):
 ```
 light:
-  - platform: mqtt_json
+  - platform: mqtt
+    schema: json
     name: "Front Porch ESPixelStick"
     state_topic: "porch/esps"
     command_topic: "porch/esps/set"
